@@ -197,7 +197,7 @@ function submitContactForm(event) {
   if (!validatePhoneNumber()) return false;
 
   const form = event.target;
-  const url = form.action;
+  const url = "https://script.google.com/macros/s/AKfycbwCh36JV-2sTGKaJkN1d2nboeoSpoRY9RGAcZ5by_wri7uXAgFAuyEqjFu6nog7giU/exec";
   const formData = new FormData(form);
 
   fetch(url, {
