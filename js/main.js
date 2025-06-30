@@ -254,14 +254,16 @@ function submitContactForm(event) {
 // });
 
 document.addEventListener('DOMContentLoaded', function() {
-  const goContactBtn = document.getElementById('go-contact-btn');
-  if (goContactBtn) {
-    goContactBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      const contactSection = document.getElementById('contact');
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  }
+  ['go-contact-btn-header', 'go-contact-btn-hero'].forEach(function(btnId) {
+    const btn = document.getElementById(btnId);
+    if (btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    }
+  });
 });
