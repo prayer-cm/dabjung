@@ -42,6 +42,17 @@ body {
   background-clip: text;
 }
 
+.logo img {
+  height: 80px;         /* 원하는 높이(px, rem 등) */
+  width: auto;          /* 비율 유지 */
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  /* 필요시 아래 속성 추가 */
+  max-width: 180px;     /* 너무 커지지 않게 제한 */
+  padding: 4px 0;
+}
+
 .nav-menu {
   display: flex;
   list-style: none;
