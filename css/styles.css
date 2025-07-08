@@ -486,22 +486,26 @@ body {
 .image-slider-container {
   width: 100%;
   overflow: hidden;
-  white-space: nowrap;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding: 10px 0;
 }
 
-.image-slider {
+.image-slider,
+.image-slider-second {
+  width: 100%;
+  white-space: nowrap;
   display: inline-block;
 }
 
-.image-slider img {
+.image-slider img,
+.image-slider-second img{
   height: 150px; /* 이미지 높이 */
   width: auto;
   margin: 0 10px; /* 이미지 간 간격 */
   vertical-align: middle;
   border-radius: 8px;
   object-fit: cover;
+  padding: 10px 0;
 }
 
 .star-ratings {
